@@ -1,8 +1,8 @@
 import os
 import docker
 
-print("\n Welcome to BankBazaar's sniper.\n\n")
-print(" 1. Enter the docker repo: cyberspidy/secops, 2. Enter command eg sniper or nmap\n\n")
+print("\n Welcome to DokSnip.\n\n")
+print(" 1. Enter the docker repo: xer0dayz/sn1per, 2. Enter command eg sniper -h \n\n")
 repo = input ("Enter image repo:")
 #name = input ("Enter container name:")
 command = input ("Enter command to run:")
