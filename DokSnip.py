@@ -11,6 +11,6 @@ client = docker.from_env()
 print ("\nScan In Progress")
 subprocess.run(["date"])
 client.containers.run(repo, command,
-volumes={os.getcwd():{'bind':'/usr/share/sniper/loot','mode':'rw'}}, stream=True)
+volumes={os.getcwd():{'bind':'/usr/share/sniper/loot','mode':'rw'}}, stream=True, auto_remove=True)
 print ("\nScan Completed")
 subprocess.run(["date"])
